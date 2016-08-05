@@ -4,7 +4,7 @@ var CommentList = React.createClass({
 		return(
 			<div>
 				{JSON.parse(this.props.comments).map(function(feedback){
-					return(<div> {feedback.comment}</div>);
+					return <Comment key={feedback.id} rank={feedback.rank} comment={feedback.comment} user_id={feedback.user_id}/>;
 				})}
 			</div>
 		);
