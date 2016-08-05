@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+    <nav class="top-bar foundation-bar" data-topbar>
+      <div class="title-area name">
+        <a href="/">React Example</a>
+      </div>
+      <div class="top-bar-section">
+        <span class="right"><%= link_to "restaurants", restaurants_path %></span>
+        <span class="right"><%= link_to "comments", comments_path %></span>
+      </div>
+
+    </nav>
+
+    <%= yield %>
+
+  </body>
+</html>
