@@ -14,7 +14,7 @@
   <strong>Description:</strong>
   <%= @restaurant.description %>
 </p>
-<%= react_component('Comment', {user_id: 1, comment: 'reviewing this restaurant', rank: 3}) %>
+<%= react_component('CommentList', {comments: raw(render(template: 'comments/index.json.jbuilder')) }) %>
 
 <%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
 <%= link_to 'Back', restaurants_path %>
