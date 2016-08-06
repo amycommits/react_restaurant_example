@@ -21,6 +21,8 @@ gem 'rspec-rails'
 gem 'foundation-rails'
 gem 'react-rails'
 gem 'd3-rails'
+gem 'flux-rails-assets'
+gem 'lodash-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
